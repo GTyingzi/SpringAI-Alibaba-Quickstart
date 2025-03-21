@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: Advisor
+
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+
+      chat:
+        options:
+          model: qwq-plus

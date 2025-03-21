@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: Chat-Model
+
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+
+      chat:
+        options:
+          model: qwq-plus
