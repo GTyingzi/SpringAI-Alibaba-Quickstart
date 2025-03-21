@@ -38,11 +38,11 @@
             <artifactId>spring-ai-alibaba-starter</artifactId>
             <version>${ai-alibaba.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>dashscope-sdk-java</artifactId>
-            <version>${dashscope-sdk-java.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba</groupId>-->
+<!--            <artifactId>dashscope-sdk-java</artifactId>-->
+<!--            <version>${dashscope-sdk-java.version}</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <repositories>
