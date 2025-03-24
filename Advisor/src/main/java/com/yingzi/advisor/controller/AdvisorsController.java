@@ -37,7 +37,7 @@ public class AdvisorsController {
                 .defaultAdvisors(
                         new MessageChatMemoryAdvisor(chatMemory)
                         // 整合 QWQ 的思考过程到输出中
-                        ,new ReasoningContentAdvisor(0)
+//                        ,new ReasoningContentAdvisor(0)
                 )
                 .build();
     }

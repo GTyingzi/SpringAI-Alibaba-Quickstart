@@ -11,6 +11,7 @@
     <modules>
         <module>Chat-Model</module>
         <module>Advisor</module>
+        <module>Advisor-Memory</module>
     </modules>
 
     <parent>

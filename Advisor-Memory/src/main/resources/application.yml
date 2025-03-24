@@ -1,0 +1,25 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: Advisor-Memory
+
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+
+      chat:
+        options:
+          model: qwq-plus
+---
+spring:
+  datasource:
+    url: 127.0.0.1:3306
+    username: root
+    password: root
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+
