@@ -69,8 +69,7 @@ public class WeatherService implements Function<WeatherService.Request, WeatherS
             }));
             logger.info("Weather data fetched successfully for city: {}", response.city());
             return response;
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             logger.error("Failed to fetch weather data: {}", e.getMessage());
             return null;
         }
@@ -99,8 +98,9 @@ public class WeatherService implements Function<WeatherService.Request, WeatherS
 
     @JsonClassDescription("Weather Service API response")
     public record Response(
-            String city,
-            Map<String, Object> current,
+            @JsonProperty(required = true, value = "city") @JsonPropertyDescription("city name") String city,
+            @JsonProperty(required = true, value = "current") @JsonPropertyDescription("Current weather info") Map<String, Object> current,
+            @JsonProperty(required = true, value = "forecastDays") @JsonPropertyDescription("Forecast weather info")
             List<Map<String, Object>> forecastDays) {
     }
 

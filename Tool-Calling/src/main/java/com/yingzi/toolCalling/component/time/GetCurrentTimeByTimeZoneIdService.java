@@ -31,7 +31,8 @@ public class GetCurrentTimeByTimeZoneIdService implements Function<GetCurrentTim
             + "zone id, such as Asia/Shanghai") String timeZoneId) {
     }
 
-    public record Response(String description) {
+    @JsonClassDescription("Current time in that time zone")
+    public record Response(@JsonPropertyDescription("A description containing the current time zone and the current time in that time zone") String description) {
     }
 
 }
