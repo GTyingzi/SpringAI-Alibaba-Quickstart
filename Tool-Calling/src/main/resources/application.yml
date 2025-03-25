@@ -1,0 +1,23 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: Tool-Calling
+
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+
+    toolcalling:
+      baidutranslate:
+        enabled: true
+        app-id : ${BAIDU_TRANSLATE_APP_ID}
+        secret-key: ${BAIDU_TRANSLATE_SECRET_KEY}
+
+      time:
+        enabled: true
+
+      weather:
+        enabled: true
+        api-key: ${WEATHER_API_KEY}

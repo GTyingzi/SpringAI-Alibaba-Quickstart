@@ -229,7 +229,6 @@ public class MysqlChatMemory implements ChatMemory, AutoCloseable {
 
                 while (resultSet.next()) {
                     String oldMessage = resultSet.getString("messages");
-//                    oldMessage = filterIllegalCharacter(oldMessage);
                     if (oldMessage != null && !oldMessage.isEmpty()) {
                         List<Message> messages = this.objectMapper.readValue(oldMessage, new TypeReference<>() {
                         });

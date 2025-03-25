@@ -12,6 +12,7 @@
         <module>Chat-Model</module>
         <module>Advisor</module>
         <module>Advisor-Memory</module>
+        <module>Tool-Calling</module>
     </modules>
 
     <parent>
