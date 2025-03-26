@@ -1,5 +1,6 @@
 package com.yingzi.toolCalling.controller;
 
+import com.yingzi.toolCalling.component.time.TimeTools;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,11 +30,19 @@ public class TimeController {
     }
 
     /**
-     * 调用工具版
+     * 调用工具版 - function
      */
-    @GetMapping("/chat-tool")
-    public String chatTranslate(@RequestParam(value = "query", defaultValue = "请告诉我现在北京时间几点了") String query) {
+    @GetMapping("/chat-tool-function")
+    public String chatTranslateFunction(@RequestParam(value = "query", defaultValue = "请告诉我现在北京时间几点了") String query) {
         return dashScopeChatClient.prompt(query).tools("getCityTimeFunction").call().content();
+    }
+
+    /**
+     * 调用工具版 - method
+     */
+    @GetMapping("/chat-tool-method")
+    public String chatTranslateMethod(@RequestParam(value = "query", defaultValue = "请告诉我现在北京时间几点了") String query) {
+        return dashScopeChatClient.prompt(query).tools(new TimeTools()).call().content();
     }
 
 }

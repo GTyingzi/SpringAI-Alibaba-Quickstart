@@ -27,8 +27,7 @@ public class GetCurrentTimeByTimeZoneIdService implements Function<GetCurrentTim
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonClassDescription("Get the current time based on time zone id")
-    public record Request(@JsonProperty(required = true, value = "timeZoneId") @JsonPropertyDescription("Time "
-            + "zone id, such as Asia/Shanghai") String timeZoneId) {
+    public record Request(@JsonProperty(required = true, value = "timeZoneId") @JsonPropertyDescription("Time zone id, such as Asia/Shanghai") String timeZoneId) {
     }
 
     @JsonClassDescription("Current time in that time zone")

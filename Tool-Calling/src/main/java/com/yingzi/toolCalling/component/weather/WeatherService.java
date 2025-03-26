@@ -1,6 +1,5 @@
 package com.yingzi.toolCalling.component.weather;
 
-import cn.hutool.extra.pinyin.PinyinUtil;
 import com.fasterxml.jackson.annotation.JsonClassDescription;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -55,11 +54,12 @@ public class WeatherService implements Function<WeatherService.Request, WeatherS
             logger.error("Invalid request: city is required.");
             return null;
         }
-        String location = preprocessLocation(request.city());
+        String location = WeatherUtils.preprocessLocation(request.city());
         String url = UriComponentsBuilder.fromHttpUrl(WEATHER_API_URL)
                 .queryParam("q", location)
                 .queryParam("days", request.days())
                 .toUriString();
+        logger.info("url : {}", url);
         try {
             Mono<String> responseMono = webClient.get().uri(url).retrieve().bodyToMono(String.class);
             String jsonResponse = responseMono.block();
@@ -73,18 +73,6 @@ public class WeatherService implements Function<WeatherService.Request, WeatherS
             logger.error("Failed to fetch weather data: {}", e.getMessage());
             return null;
         }
-    }
-
-    // Use the tools in hutool to convert Chinese place names into pinyin
-    private String preprocessLocation(String location) {
-        if (containsChinese(location)) {
-            return PinyinUtil.getPinyin(location, "");
-        }
-        return location;
-    }
-
-    private boolean containsChinese(String str) {
-        return str.matches(".*[\u4e00-\u9fa5].*");
     }
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
