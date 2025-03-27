@@ -13,6 +13,9 @@
         <module>Advisor</module>
         <module>Advisor-Memory</module>
         <module>Tool-Calling</module>
+        <module>Mcp</module>
+        <module>Mcp/Client-Webflux</module>
+        <module>Mcp/Server-Webflux</module>
     </modules>
 
     <parent>
