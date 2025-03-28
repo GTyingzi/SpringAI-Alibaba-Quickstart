@@ -8,3 +8,4 @@
 2. [Advisor](https://ik3te1knhq.feishu.cn/wiki/CxblwapL4inG19ku20mcfMXyn0d)：核心模块，封装重复任务、数据转移、模型可移植性
 3. [Adivisor-Memory](https://ik3te1knhq.feishu.cn/wiki/IXhNwcA5zirJtckC2iccBunGnOf): Memory的Mysql、Redis存储实现
 4. [Tool-Calling](https://ik3te1knhq.feishu.cn/wiki/M3TUwmb1SiWjmnkhMBfcNym0n0d): 调用tool工具，时间、百度翻译、天气预测等三个工具的案例
+5. [Mcp](https://ik3te1knhq.feishu.cn/wiki/KLZpwDmA6i3Iz4k4v5VclAjEnhg): 时间、百度翻译、天气预测的mcp实现，含stdio、webflux两种方式
