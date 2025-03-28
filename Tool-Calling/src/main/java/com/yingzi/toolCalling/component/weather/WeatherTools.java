@@ -79,5 +79,4 @@ public class WeatherTools {
     public record Response(String city, Map<String, Object> current, List<Map<String, Object>> forecastDays) {
     }
 
-
 }

@@ -1,0 +1,13 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: mcp-client-stdio
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+    mcp:
+      client:
+        stdio:
+          servers-configuration: classpath:/mcp-servers-config.json

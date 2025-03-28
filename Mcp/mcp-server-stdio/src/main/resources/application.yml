@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: mcp-server-stdio
+  main:
+    web-application-type: none
+    banner-mode: off
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+    mcp:
+      server:
+        name: weather-time-translate
+        version: 0.0.1
+
+    toolcalling:
+      baidutranslate:
+        app-id : ${BAIDU_TRANSLATE_APP_ID}
+        secret-key: ${BAIDU_TRANSLATE_SECRET_KEY}

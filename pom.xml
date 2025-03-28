@@ -14,8 +14,10 @@
         <module>Advisor-Memory</module>
         <module>Tool-Calling</module>
         <module>Mcp</module>
-        <module>Mcp/Client-Webflux</module>
-        <module>Mcp/Server-Webflux</module>
+        <module>Mcp/mcp-client-stdio</module>
+        <module>Mcp/mcp-server-stdio</module>
+        <module>Mcp/mcp-server-webflux</module>
+        <module>Mcp/mcp-client-webflux</module>
     </modules>
 
     <parent>
@@ -29,6 +31,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-ai.version>1.0.0-M6</spring-ai.version>
         <ai-alibaba.version>1.0.0-M6.1</ai-alibaba.version>
         <dashscope-sdk-java.version>2.18.5</dashscope-sdk-java.version>
     </properties>
@@ -37,6 +40,13 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-bom</artifactId>
+            <version>${spring-ai.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
         </dependency>
         <dependency>
             <groupId>com.alibaba.cloud.ai</groupId>
@@ -50,14 +60,35 @@
 <!--        </dependency>-->
     </dependencies>
 
+
+
     <repositories>
+        <repository>
+            <name>Central Portal Snapshots</name>
+            <id>central-portal-snapshots</id>
+            <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
         <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
-            <url>https://repo.spring.io/milestone</url>
+            <url>https://repo.spring.io/libs-milestone-local</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
+        </repository>
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
         </repository>
     </repositories>
 

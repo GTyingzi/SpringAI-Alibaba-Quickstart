@@ -1,0 +1,25 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: mcp-client-webflux
+  main:
+    web-application-type: none
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+
+    mcp:
+      client:
+        sse:
+          connections:
+            server1:
+              url: http://localhost:8085
+# 调试日志
+logging:
+  level:
+    io:
+      modelcontextprotocol:
+        client: DEBUG
+        spec: DEBUG
