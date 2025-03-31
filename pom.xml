@@ -8,6 +8,13 @@
     <artifactId>SpringAI-Alibaba-Quickstart</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.9</version>
+    </parent>
+
     <modules>
         <module>Chat-Model</module>
         <module>Advisor</module>
@@ -20,46 +27,48 @@
         <module>Mcp/mcp-client-webflux</module>
     </modules>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.3.9</version>
-        <relativePath/>
-    </parent>
-
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-boot.version>3.3.9</spring-boot.version>
         <spring-ai.version>1.0.0-M6</spring-ai.version>
         <ai-alibaba.version>1.0.0-M6.1</ai-alibaba.version>
         <dashscope-sdk-java.version>2.18.5</dashscope-sdk-java.version>
+        <mcp.version>0.8.1</mcp.version>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.ai</groupId>
-            <artifactId>spring-ai-bom</artifactId>
-            <version>${spring-ai.version}</version>
-            <type>pom</type>
-            <scope>import</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba.cloud.ai</groupId>
-            <artifactId>spring-ai-alibaba-starter</artifactId>
-            <version>${ai-alibaba.version}</version>
-        </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.alibaba</groupId>-->
-<!--            <artifactId>dashscope-sdk-java</artifactId>-->
-<!--            <version>${dashscope-sdk-java.version}</version>-->
-<!--        </dependency>-->
-    </dependencies>
-
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.ai</groupId>
+                <artifactId>spring-ai-bom</artifactId>
+                <version>${spring-ai.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud.ai</groupId>
+                <artifactId>spring-ai-alibaba-starter</artifactId>
+                <version>${ai-alibaba.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.modelcontextprotocol.sdk</groupId>
+                <artifactId>mcp</artifactId>
+                <version>${mcp.version}</version>
+            </dependency>
+            <!--        <dependency>-->
+            <!--            <groupId>com.alibaba</groupId>-->
+            <!--            <artifactId>dashscope-sdk-java</artifactId>-->
+            <!--            <version>${dashscope-sdk-java.version}</version>-->
+            <!--        </dependency>-->
+        </dependencies>
+    </dependencyManagement>
 
 
     <repositories>

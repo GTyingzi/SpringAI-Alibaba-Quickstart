@@ -2,6 +2,9 @@ package com.yingzi.mcp.server.webflux.component.weather;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.yingzi.mcp.server.webflux.component.time.TimeService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.ai.tool.annotation.ToolParam;
 import org.springframework.stereotype.Service;
@@ -18,6 +21,9 @@ import java.util.List;
  */
 @Service
 public class OpenMeteoService {
+
+    private static final Logger logger = LoggerFactory.getLogger(OpenMeteoService.class);
+
 
     // OpenMeteo免费天气API基础URL
     private static final String BASE_URL = "https://api.open-meteo.com/v1";
@@ -127,6 +133,8 @@ public class OpenMeteoService {
      */
     @Tool(description = "获取指定经纬度的天气预报")
     public String getWeatherForecastByLocation(double latitude, double longitude) {
+        logger.info("天气预报，当前地区的纬度: {}, 经度: {}", latitude, longitude);
+
         // 获取天气数据（当前和未来7天）
         var weatherData = restClient.get()
                 .uri("/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m,apparent_temperature,relative_humidity_2m,precipitation,weather_code,wind_speed_10m,wind_direction_10m&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,weather_code,wind_speed_10m_max,wind_direction_10m_dominant&timezone=auto&forecast_days=7",
@@ -213,6 +221,7 @@ public class OpenMeteoService {
     @Tool(description = "获取指定位置的空气质量信息（模拟数据）")
     public String getAirQuality(@ToolParam(description = "纬度") double latitude,
                                 @ToolParam(description = "经度") double longitude) {
+        logger.info("空气质量信息，当前地区的纬度: {}, 经度: {}", latitude, longitude);
 
         try {
             // 从天气数据中获取基本信息

@@ -1,6 +1,6 @@
 {
     "mcpServers": {
-        "weather": {
+        "time-weather": {
             "command": "java",
             "args": [
                 "-Dspring.ai.mcp.server.stdio=true",

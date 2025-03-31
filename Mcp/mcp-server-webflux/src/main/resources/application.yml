@@ -18,3 +18,10 @@ spring:
       baidutranslate:
         app-id: ${BAIDU_TRANSLATE_APP_ID}
         secret-key: ${BAIDU_TRANSLATE_SECRET_KEY}
+# 调试日志
+logging:
+  level:
+    io:
+      modelcontextprotocol:
+        client: DEBUG
+        spec: DEBUG

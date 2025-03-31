@@ -2,18 +2,26 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Advisor-Memory/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Advisor-Memory/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Advisor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Advisor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chat-Model/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chat-Model/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Mcp/Client-Webflux/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Mcp/Mco-Client-Stdio/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Mcp/Server-Webflux/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Mcp/mcp-client-stdio/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Mcp/mcp-client-stdio/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Mcp/mcp-client-webflux/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Mcp/mcp-client-webflux/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Mcp/mcp-server-stdio/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Mcp/mcp-server-stdio/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Mcp/mcp-server-webflux/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Mcp/mcp-server-webflux/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Mcp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Mcp/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Tool-Calling/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Tool-Calling/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
