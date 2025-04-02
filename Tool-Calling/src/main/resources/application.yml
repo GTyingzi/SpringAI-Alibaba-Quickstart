@@ -8,7 +8,12 @@ spring:
   ai:
     dashscope:
       api-key: ${DASHSCOPE_API_KEY}
-
+#    openai:
+#      api-key: ${AI_OPENAI_API_KEY}
+#      base-url: https://dashscope.aliyuncs.com/compatible-mode
+#      chat:
+#        options:
+#          model: qwen-max
     toolcalling:
       baidutranslate:
         enabled: true

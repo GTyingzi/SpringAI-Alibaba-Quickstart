@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/Mcp/Mcp-Client-Stdio/pom.xml" />
         <option value="$PROJECT_DIR$/Mcp/Mcp-Server-Stdio/pom.xml" />
         <option value="$PROJECT_DIR$/Mcp/Server-Webflux/pom.xml" />
+        <option value="$PROJECT_DIR$/Multimodality/pom.xml" />
       </set>
     </option>
   </component>
