@@ -9,4 +9,5 @@
 3. [Adivisor-Memory](https://ik3te1knhq.feishu.cn/wiki/IXhNwcA5zirJtckC2iccBunGnOf): Memory的Mysql、Redis存储实现
 4. [Tool-Calling](https://ik3te1knhq.feishu.cn/wiki/M3TUwmb1SiWjmnkhMBfcNym0n0d): 调用tool工具，时间、百度翻译、天气预测等三个工具的案例
 5. [Mcp](https://ik3te1knhq.feishu.cn/wiki/KLZpwDmA6i3Iz4k4v5VclAjEnhg): 时间、百度翻译、天气预测的mcp实现，含stdio、webflux两种方式
-6. alibaba-api-example：阿里百炼平台各个api接口的实践
+6. Alibaba-Api-Example：阿里百炼平台各个api接口的实践
+7. [Structured-Output](https://ik3te1knhq.feishu.cn/wiki/PFIiwnF7qihYI7klJ1KcpFGmnXd): 结构化输出的实践
