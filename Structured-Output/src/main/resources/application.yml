@@ -1,0 +1,10 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: Structured-Output
+
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}

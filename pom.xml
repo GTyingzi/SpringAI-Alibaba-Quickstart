@@ -25,7 +25,8 @@
         <module>Mcp/mcp-server-stdio</module>
         <module>Mcp/mcp-server-webflux</module>
         <module>Mcp/mcp-client-webflux</module>
-        <module>alibaba-api-example</module>
+        <module>Alibaba-Api-Example</module>
+        <module>Structured-Output</module>
     </modules>
 
     <properties>
