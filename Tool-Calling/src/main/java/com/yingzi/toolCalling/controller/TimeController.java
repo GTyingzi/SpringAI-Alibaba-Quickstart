@@ -34,15 +34,14 @@ public class TimeController {
 
     private final int STREAM_CHAT_ID = 1001;
 
-
     private final ChatClient dashScopeChatClient;
 
     public TimeController(ChatClient.Builder chatClientBuilder) {
         this.dashScopeChatClient = chatClientBuilder
                 .defaultAdvisors(new MessageChatMemoryAdvisor(chatMemory))
-                .defaultOptions(ToolCallingChatOptions.builder()
-                        .internalToolExecutionEnabled(false)  // 禁用内部工具执行
-                        .build())
+//                .defaultOptions(ToolCallingChatOptions.builder()
+//                        .internalToolExecutionEnabled(false)  // 禁用内部工具执行
+//                        .build())
                 .build();
     }
 
@@ -76,15 +75,14 @@ public class TimeController {
     }
 
     /**
-     * 调用工具版 - method - stream
+     * 调用工具版 - function - stream
      */
-    @GetMapping("/chat-tool-method-stream")
-    public Flux<String> chatTimeMethodStream(@RequestParam(value = "query", defaultValue = "请告诉我现在北京时间几点了") String query) {
+    @GetMapping("/chat-tool-function-stream")
+    public Flux<String> chatTimeFunctionStream(@RequestParam(value = "query", defaultValue = "请告诉我现在北京时间几点了") String query) {
         return dashScopeChatClient.prompt(query)
-                .tools(new TimeTools())
+                .tools("getCityTimeFunction")
                 .advisors(a -> a.param(CHAT_MEMORY_CONVERSATION_ID_KEY, STREAM_CHAT_ID)
                         .param(CHAT_MEMORY_RETRIEVE_SIZE_KEY, CHAT_MEMORY_RETRIEVE_SIZE))
                 .stream().content();
     }
-
 }

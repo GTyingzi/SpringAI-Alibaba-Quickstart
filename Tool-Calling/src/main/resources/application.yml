@@ -6,10 +6,10 @@ spring:
     name: Tool-Calling
 
   ai:
-    dashscope:
-      api-key: ${DASHSCOPE_API_KEY}
+#    dashscope:
+#      api-key: ${DASHSCOPE_API_KEY}
 #    openai:
-#      api-key: ${AI_OPENAI_API_KEY}
+#      api-key: ${DASHSCOPE_API_KEY}
 #      base-url: https://dashscope.aliyuncs.com/compatible-mode
 #      chat:
 #        options:

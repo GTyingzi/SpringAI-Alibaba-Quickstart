@@ -89,7 +89,6 @@ public class TextAudioGeneration {
     }
 
     private static final String URL = "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions";
-    private static final String API_KEY = "sk-d7a584022b594fc99aa2e0730a8b9d0d";
     private static final String MODEL = "qwen-omni-turbo";
     private static final String MP3_URL = "https://dashscope.oss-cn-beijing.aliyuncs.com/audios/welcome.mp3";
 
@@ -132,9 +131,13 @@ public class TextAudioGeneration {
         // 设置请求方法为POST
         con.setRequestMethod("POST");
 
+        // 若没有配置环境变量，请用百炼API Key将下行替换为：String apiKey = "sk-xxx";
+        String apiKey = System.getenv("DASHSCOPE_API_KEY");
+        String auth = "Bearer " + apiKey;
+
         // 设置请求头
         con.setRequestProperty("Content-Type", "application/json");
-        con.setRequestProperty("Authorization", "Bearer sk-d7a584022b594fc99aa2e0730a8b9d0d");
+        con.setRequestProperty("Authorization", auth);
         con.setRequestProperty("Cookie", "acw_tc=01a132c7-e8a9-91d1-b0ca-1fae2e7d5ec012a37177dee494164ef6685578571380");
 
         // 启用输入输出流
