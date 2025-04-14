@@ -27,6 +27,7 @@
         <module>Mcp/mcp-client-webflux</module>
         <module>Alibaba-Api-Example</module>
         <module>Structured-Output</module>
+        <module>Rag</module>
     </modules>
 
     <properties>

@@ -1,0 +1,21 @@
+server:
+  port: 8089
+
+spring:
+  application:
+    name: rag-example
+
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+
+    vectorstore:
+      elasticsearch:
+        index-name: spring_ai_alibaba
+        similarity: cosine
+        dimensions: 1536
+
+  elasticsearch:
+    uris: https://127.0.0.1:9200
+    username: elastic
+    password: yingzi
