@@ -28,6 +28,8 @@
         <module>Alibaba-Api-Example</module>
         <module>Structured-Output</module>
         <module>Rag</module>
+        <module>Vector-Databases</module>
+        <module>Vector-Databases/Elasticsearch-exmaple</module>
     </modules>
 
     <properties>

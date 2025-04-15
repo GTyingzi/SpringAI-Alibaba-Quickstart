@@ -1,9 +1,9 @@
 server:
-  port: 8089
+  port: 8090
 
 spring:
   application:
-    name: rag-example
+    name: Elasticsearch-example
 
   ai:
     dashscope:
@@ -11,8 +11,7 @@ spring:
 
     vectorstore:
       elasticsearch:
-        initialize-schema: true
-        index-name: spring_ai_alibaba
+        index-name: yingzi_spring_ai
         similarity: cosine
         dimensions: 1536
 
@@ -20,7 +19,3 @@ spring:
     uris: https://127.0.0.1:9200
     username: elastic
     password: yingzi
----
-spring:
-  main:
-    allow-bean-definition-overriding: true

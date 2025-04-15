@@ -11,4 +11,7 @@
 5. [Mcp](https://ik3te1knhq.feishu.cn/wiki/KLZpwDmA6i3Iz4k4v5VclAjEnhg): 时间、百度翻译、天气预测的mcp实现，含stdio、webflux两种方式
 6. Alibaba-Api-Example：阿里百炼平台各个api接口的实践
 7. [Structured-Output](https://ik3te1knhq.feishu.cn/wiki/PFIiwnF7qihYI7klJ1KcpFGmnXd): 结构化输出的Map、List、Bean的实践
-8. [Rag](https://ik3te1knhq.feishu.cn/wiki/YqNewh36AiJUHHkqgsScZGKJnEf): Rag+Es的实践
+8. Vector-Database: 向量数据库的实践
+   - [Elasticsearch-example](https://ik3te1knhq.feishu.cn/wiki/APlNwTknqiy43zkWWoFcAn8un4e): 向量数据库-ES的实践
+9. Rag: 向量导入、检索的实践
+   - (https://ik3te1knhq.feishu.cn/wiki/YqNewh36AiJUHHkqgsScZGKJnEf): 切割Pdf，导入Es，检索
