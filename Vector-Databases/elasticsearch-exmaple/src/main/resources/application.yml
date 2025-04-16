@@ -1,9 +1,9 @@
 server:
-  port: 8090
+  port: 8091
 
 spring:
   application:
-    name: Elasticsearch-example
+    name: elasticsearch-example
 
   ai:
     dashscope:
@@ -11,6 +11,7 @@ spring:
 
     vectorstore:
       elasticsearch:
+        initialize-schema: true
         index-name: yingzi_spring_ai
         similarity: cosine
         dimensions: 1536

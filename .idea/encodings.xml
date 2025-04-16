@@ -28,7 +28,9 @@
     <file url="file://$PROJECT_DIR$/Structured-Output/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Tool-Calling/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Tool-Calling/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Vector-Databases/Elasticsearch-exmaple/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vector-Databases/elasticsearch-exmaple/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vector-Databases/redis-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vector-Databases/simple-example/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Vector-Databases/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />

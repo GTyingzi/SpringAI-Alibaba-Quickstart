@@ -70,7 +70,7 @@ public class ElasticsearchConfig {
     }
 
     @Bean
-    @Qualifier("vectorStoreCustom")
+    @Qualifier("elasticsearchVectorStore")
     public ElasticsearchVectorStore vectorStore(RestClient restClient, EmbeddingModel embeddingModel) {
         logger.info("create elasticsearch vector store");
 
@@ -82,7 +82,7 @@ public class ElasticsearchConfig {
         return ElasticsearchVectorStore.builder(restClient, embeddingModel)
                 .options(options)                     // Optional: use custom options
                 .initializeSchema(true)               // Optional: defaults to false
-                .batchingStrategy(new TokenCountBatchingStrategy()) // Optional: defaults to TokenCountBatchingStrategy
+                .batchingStrategy(new TokenCountBatchingStrategy())// Optional: defaults to TokenCountBatchingStrategy
                 .build();
     }
 
