@@ -27,7 +27,7 @@ public class SimpleController {
 
     private static final Logger logger = LoggerFactory.getLogger(SimpleController.class);
     private final SimpleVectorStore simpleVectorStore;
-    private final String SAVE_PATH = System.getProperty("user.dir") + "/Vector-Databases/simple-example/src/main/resources/save.json";
+    private final String SAVE_PATH = System.getProperty("user.dir") + "/Vector-Databases/vector-simple-example/src/main/resources/save.json";
     public SimpleController(EmbeddingModel embeddingModel) {
         this.simpleVectorStore = SimpleVectorStore
                 .builder(embeddingModel).build();

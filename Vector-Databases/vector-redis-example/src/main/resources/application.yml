@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: redis-example
+    name: vector-redis-example
 
   ai:
     dashscope:

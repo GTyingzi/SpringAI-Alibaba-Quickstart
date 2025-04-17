@@ -16,4 +16,5 @@
    - elasticsearch-example: 基于es
    - redis-example: 基于redis
 9. [Rag](https://ik3te1knhq.feishu.cn/wiki/YqNewh36AiJUHHkqgsScZGKJnEf): 向量导入、检索的实践
+   - rag-simple-example: 基于内存向量数据库，QuestionAnswerAdvisor、RetrievalAugmentationAdvisor类实践
    - rag-example: 切割Pdf，导入Es，检索

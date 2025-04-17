@@ -3,4 +3,4 @@ server:
 
 spring:
   application:
-    name: simple-example
+    name: vector-simple-example

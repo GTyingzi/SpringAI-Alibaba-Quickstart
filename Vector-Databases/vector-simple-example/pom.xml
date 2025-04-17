@@ -10,7 +10,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>elasticsearch-exmaple</artifactId>
+    <artifactId>vector-simple-example</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -29,18 +29,5 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.ai</groupId>
-            <artifactId>spring-ai-elasticsearch-store-spring-boot-starter</artifactId>
-        </dependency>
-
-<!--        es版本匹配-->
-        <dependency>
-            <groupId>co.elastic.clients</groupId>
-            <artifactId>elasticsearch-java</artifactId>
-            <version>8.17.4</version>
-            <scope>compile</scope>
-        </dependency>
     </dependencies>
-
 </project>

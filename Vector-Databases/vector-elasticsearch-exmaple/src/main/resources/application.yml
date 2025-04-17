@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: elasticsearch-example
+    name: vector-elasticsearch-example
 
   ai:
     dashscope:

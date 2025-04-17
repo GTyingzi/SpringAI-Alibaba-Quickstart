@@ -29,9 +29,9 @@
         <module>Structured-Output</module>
         <module>Rag</module>
         <module>Vector-Databases</module>
-        <module>Vector-Databases/elasticsearch-exmaple</module>
-        <module>Vector-Databases/redis-example</module>
-        <module>Vector-Databases/simple-example</module>
+        <module>Vector-Databases/vector-elasticsearch-exmaple</module>
+        <module>Vector-Databases/vector-redis-example</module>
+        <module>Vector-Databases/vector-simple-example</module>
     </modules>
 
     <properties>
