@@ -35,7 +35,5 @@
     <file url="file://$PROJECT_DIR$/Vector-Databases/vector-simple-example/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../spring-ai-alibaba-examples/spring-ai-alibaba-rag-example/spring-ai-alibaba-vector-databases-example/vector-redis-example/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../spring-ai-alibaba-examples/spring-ai-alibaba-rag-example/spring-ai-alibaba-vector-databases-example/vector-redis-example/src/main/resources" charset="UTF-8" />
   </component>
 </project>

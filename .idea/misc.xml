@@ -5,7 +5,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/../spring-ai-alibaba-examples/spring-ai-alibaba-rag-example/spring-ai-alibaba-vector-databases-example/vector-redis-example/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -16,7 +15,6 @@
         <option value="$PROJECT_DIR$/Mcp/Mcp-Server-Stdio/pom.xml" />
         <option value="$PROJECT_DIR$/Mcp/Server-Webflux/pom.xml" />
         <option value="$PROJECT_DIR$/Multimodality/pom.xml" />
-        <option value="$PROJECT_DIR$/../spring-ai-alibaba-examples/spring-ai-alibaba-rag-example/spring-ai-alibaba-vector-databases-example/vector-redis-example/pom.xml" />
       </set>
     </option>
   </component>
