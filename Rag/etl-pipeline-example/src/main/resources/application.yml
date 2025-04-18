@@ -1,0 +1,6 @@
+server:
+  port: 8094
+
+spring:
+  application:
+    name: etl-pipeline-example
