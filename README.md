@@ -19,3 +19,5 @@
    - rag-simple-example: 基于内存向量数据库，QuestionAnswerAdvisor、RetrievalAugmentationAdvisor类实践
    - rag-pipeline-exmaple: 多种数据源转换Document类的实践
    - rag-example: 切割Pdf，导入Es，检索
+10. [Graph](https://ik3te1knhq.feishu.cn/wiki/A2iNw98VdiuxyUktCrhcSdRLnYl): 利用Spring ai alibaba graph构建工作流
+    - Write-Assistant: 写作助手

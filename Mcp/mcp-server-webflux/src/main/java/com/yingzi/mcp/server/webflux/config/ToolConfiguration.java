@@ -26,16 +26,15 @@ public class ToolConfiguration {
     private static final Logger logger = LoggerFactory.getLogger(ToolConfiguration.class);
 
 
-//    @Bean
-//    public ToolCallbackProvider weatherTools(OpenMeteoService openMeteoService, TimeService timeService, BaidutranslateService baidutranslateService) {
-//        return MethodToolCallbackProvider.builder().toolObjects(openMeteoService, timeService, baidutranslateService).build();
-//    }
-
     @Bean
-    public ToolCallbackProvider weatherTools(TimeService timeService) {
-        MethodToolCallbackProvider.builder().build();
-        return MethodToolCallbackProvider.builder().toolObjects(timeService).build();
+    public ToolCallbackProvider weatherTools(OpenMeteoService openMeteoService, TimeService timeService, BaidutranslateService baidutranslateService) {
+        return MethodToolCallbackProvider.builder().toolObjects(openMeteoService, timeService, baidutranslateService).build();
     }
+
+//    @Bean
+//    public ToolCallbackProvider weatherTools(TimeService timeService) {
+//        return MethodToolCallbackProvider.builder().toolObjects(timeService).build();
+//    }
 
 //    @Bean
 //    public ToolCallback[]  weatherTools(TimeService timeService) {

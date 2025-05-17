@@ -28,8 +28,8 @@ public class ReaderController {
 
     @GetMapping("/text")
     public List<Document> readText() {
-        Resource resource = new DefaultResourceLoader().getResource(Constant.TEXT_FILE_PATH);
-        TextReader textReader = new TextReader(resource); // 可以传任意类型数据
+        Resource resource = new DefaultResourceLoader().getResource(Constant.PDF_FILE_PATH);
+        TextReader textReader = new TextReader(resource); // 适用于文本数据
         return textReader.read();
     }
 

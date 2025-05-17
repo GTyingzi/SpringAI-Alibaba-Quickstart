@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.yingzi</groupId>
-        <artifactId>SpringAI-Alibaba-Quickstart</artifactId>
+        <artifactId>springai-alibaba-quickstart</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
@@ -54,6 +54,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
     </dependencies>
 
 </project>

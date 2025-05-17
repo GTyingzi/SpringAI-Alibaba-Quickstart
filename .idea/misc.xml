@@ -9,12 +9,15 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Graph/Write-Example/pom.xml" />
         <option value="$PROJECT_DIR$/Mcp/Client-Webflux/pom.xml" />
         <option value="$PROJECT_DIR$/Mcp/Mco-Client-Stdio/pom.xml" />
         <option value="$PROJECT_DIR$/Mcp/Mcp-Client-Stdio/pom.xml" />
         <option value="$PROJECT_DIR$/Mcp/Mcp-Server-Stdio/pom.xml" />
         <option value="$PROJECT_DIR$/Mcp/Server-Webflux/pom.xml" />
         <option value="$PROJECT_DIR$/Multimodality/pom.xml" />
+        <option value="$PROJECT_DIR$/Observability/pom.xml" />
+        <option value="$PROJECT_DIR$/openmanus/pom.xml" />
       </set>
     </option>
   </component>

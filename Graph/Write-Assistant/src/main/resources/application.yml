@@ -1,0 +1,10 @@
+server:
+  port: 8095
+
+spring:
+  application:
+    name: Write-Assistant
+
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
